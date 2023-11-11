@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pso"
+version = "1.1.0"
+description = ""
+authors = ["Muhammad Waqas Ilyas <qaskhan02@gmail.com>", "Muhammad Faran Ayyaz <mfaranayyaz@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pso"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+numpy = "^1.26.1"
+matplotlib = "^3.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+code = "pso:main"
